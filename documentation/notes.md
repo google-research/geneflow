@@ -1,8 +1,8 @@
 # Note from the architect
 
-## Gotcha
+## Gotchas
 
-- Tensorflow don't do shuffle in place accordingly to be cross-compattible
+- Tensorflow don't do shuffle in place accordingly to be cross-compatible
   the various backends ops including `B.shuffle()`, `B.full_shuffle()` are also
   not in place. That might caught you by surprise if you come from `numpy`.
 
